@@ -69,7 +69,7 @@ const handleCompleteTodo = (id) => {
                 <label htmlFor={`completed-${todo.id}`} className="completed">
                   {todo.emoji} {todo.text}
                 </label>
-                <button onClick={() => handleDeleteTodo(todo.id)}>?</button>
+                <button onClick={() => handleDeleteTodo(todo.id)}>✅</button>
               </li>
             ))}
           </ul>
