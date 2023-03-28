@@ -5,7 +5,7 @@ export default function Home() {
   const [newTodo, setNewTodo] = useState("");
   const [completedTodos, setCompletedTodos] = useState([]);
 
-  const emojis = ["??", "??", "??", "??", "??", "??"];
+  const emojis = ["😀", "😆", "😊", "😍", "🤩", "🥳"];
 
   const handleAddTodo = () => {
     if (newTodo.trim().length === 0) return;
