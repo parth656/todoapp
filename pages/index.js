@@ -50,7 +50,7 @@ const handleCompleteTodo = (id) => {
               onChange={() => handleCompleteTodo(todo.id)}
             />
             <label htmlFor={`todo-${todo.id}`}>{todo.emoji} {todo.text}</label>
-            <button onClick={() => handleDeleteTodo(todo.id)}>?</button>
+            <button onClick={() => handleDeleteTodo(todo.id)}>❌</button>
           </li>
         ))}
       </ul>
