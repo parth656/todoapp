@@ -5,7 +5,7 @@ export default function Home() {
   const [newTodo, setNewTodo] = useState("");
   const [completedTodos, setCompletedTodos] = useState([]);
 
-  const emojis = ["😀", "😆", "😊", "😍", "🤩", "🥳"];
+  const emojis = ["??", "??", "??", "??", "??", "??"];
 
   const handleAddTodo = () => {
     if (newTodo.trim().length === 0) return;
@@ -50,7 +50,7 @@ const handleCompleteTodo = (id) => {
               onChange={() => handleCompleteTodo(todo.id)}
             />
             <label htmlFor={`todo-${todo.id}`}>{todo.emoji} {todo.text}</label>
-            <button onClick={() => handleDeleteTodo(todo.id)}>❌</button>
+            <button onClick={() => handleDeleteTodo(todo.id)}>?</button>
           </li>
         ))}
       </ul>
@@ -69,7 +69,7 @@ const handleCompleteTodo = (id) => {
                 <label htmlFor={`completed-${todo.id}`} className="completed">
                   {todo.emoji} {todo.text}
                 </label>
-                <button onClick={() => handleDeleteTodo(todo.id)}>❌</button>
+                <button onClick={() => handleDeleteTodo(todo.id)}>?</button>
               </li>
             ))}
           </ul>
